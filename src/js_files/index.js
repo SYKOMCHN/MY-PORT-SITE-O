@@ -1,30 +1,46 @@
-// Create the HTML structure
-const body = document.body;
 
-// Create a header
-const header = document.createElement('h1');
-header.textContent = "Welcome to My JavaScript-Only Webpage!";
-header.style.textAlign = "center";
-header.style.color = "blue";
-body.appendChild(header);
 
-// Create a paragraph
-const paragraph = document.createElement('p');
-paragraph.textContent = "This webpage is built entirely using JavaScript!";
-paragraph.style.fontSize = "18px";
-paragraph.style.textAlign = "center";
-body.appendChild(paragraph);
+//let pageWidth = window.innerWidth;
+//let pageHeight = window.innerWidth;
 
-// Create a button
-const button = document.createElement('button');
-button.textContent = "Click Me!";
-button.style.display = "block";
-button.style.margin = "20px auto";
-button.style.padding = "10px 20px";
-button.style.fontSize = "16px";
-body.appendChild(button);
+const container = document.getElementById("container");
+window.container = container;
 
-// Add an event listener to the button
-button.addEventListener('click', () => {
-  alert("You clicked the button!");
-});
+const pageContainer = document.createElement("div");
+window.pageContainer = pageContainer; 
+pageContainer.style.backgroundColor = "rgb(37, 53, 73)";
+pageContainer.style.borderRadius = "10px";
+pageContainer.style.height = (window.innerHeight - 18) + "px";
+//pageContainer.style.display = "flex";
+window.container.appendChild(pageContainer);
+
+
+const page = document.createElement("div"); 
+window.page = page;
+page.style.backgroundColor = "rgb(252, 250, 244)";
+page.style.borderRadius = "10px";
+page.style.align = "right";
+page.style.width = (window.innerWidth - 145) + "px ";
+page.style.height = (window.innerHeight - 47) + "px";
+page.style.marginTop = "14px";
+page.style.overflow = "hidden";
+page.style.float = "right";
+window.pageContainer.appendChild(page);
+
+/* mess around a bit
+function resizePage() {
+    pageWidth = window.innerWidth;
+    pageHeight = window.innerHeight;
+    pageContainer.style.height = (pageHeight - 18) + "px";
+    page.style.width = (pageWidth - 145) + "px ";
+    page.style.height = (pageHeight - 47) + "px";
+    navigationTab.style.width = ((pageWidth / pageWidth) * 120 + "px");
+    navigationTab.style.height = (pageHeight - 118) + "px";
+    naviContainer.style.width = ((pageWidth / pageWidth) * 90 + "px");
+    naviContainer.style.height = (pageHeight - 144) + "px";
+}
+
+window.addEventListener('resize', resizePage);
+*/
+
+

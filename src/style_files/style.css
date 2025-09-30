@@ -1,15 +1,21 @@
 body {
-    background-color: black;
+    background-color: rgb(39, 40, 54);
+    font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
   
 }
 
-.container {
-    background-color: rgb(221, 206, 206); /*remove later*/
-    
-    
-}
 
+/*
+.container {
+    background-color: rgb(221, 206, 206);
+    height: 98vh;
+    width: 99vw;
+    border-radius: 10px;
+}
+*/
+
+/*
 .page-container {
     background-color: rgb(37, 53, 73);
     border-radius: 10px;
@@ -28,7 +34,7 @@ body {
     text-align: center;
     font-size: 80%
 }
-
+ 
 
 
 .page-maker {
@@ -44,3 +50,5 @@ body {
 ::-webkit-scrollbar{
     display: none;
 }
+
+*/
