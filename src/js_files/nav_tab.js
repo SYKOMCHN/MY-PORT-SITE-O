@@ -1,3 +1,4 @@
+console.log("nav_tab.js loaded");
 //navigation tab setup ------------------------------------------
 const navigationTab = document.createElement("div");
 window.navigationTab = navigationTab;
@@ -103,7 +104,7 @@ else{
 }
 
 projectPage.addEventListener('click', function() {
-    window.location.href = "src/pages/authors_projects_page.html";
+    window.location.href = "src/pages/projects_page.html";
 });
 
 window.naviContainer.appendChild(projectPage);
