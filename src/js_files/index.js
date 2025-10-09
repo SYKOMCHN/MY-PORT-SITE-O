@@ -1,7 +1,7 @@
 console.log("index loaded");
 
-let pageWidth = window.innerWidth;
-let pageHeight = window.innerWidth;
+//let pageWidth = window.innerWidth;
+//let pageHeight = window.innerWidth;
 
 //const container = document.getElementById("container");
 //window.container = container;
@@ -31,9 +31,9 @@ window.pageContainer.appendChild(page);
 function resizePage() {
     pageWidth = window.innerWidth;
     pageHeight = window.innerHeight;
-    pageContainer.style.height = (pageHeight - 18) + "px";
-    page.style.width = (pageWidth - 145) + "px ";
-    page.style.height = (pageHeight - 47) + "px";
+    pageContainer.style.height = (window.innerHeight - 18) + "px";
+    page.style.width = (window.innerWidth - 145) + "px ";
+    page.style.height = (window.innerHeight - 47) + "px";
 }
 
 window.addEventListener('resize', resizePage);

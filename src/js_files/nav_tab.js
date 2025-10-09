@@ -2,8 +2,8 @@ console.log("nav_tab loaded");
 //navigation tab setup ------------------------------------------------
 const navigationTab = document.createElement("div");
 window.navigationTab = navigationTab;
-navigationTab.style.paddingTop= "50px";
-navigationTab.style.paddingBottom= "50px";
+navigationTab.style.paddingTop = "50px";
+navigationTab.style.paddingBottom = "50px";
 navigationTab.style.backgroundColor = "rgba(195, 206, 219, 1)";
 navigationTab.style.borderRadius = "10px";
 navigationTab.style.width = ( 120 + "px");
@@ -218,7 +218,7 @@ aboutPage.addEventListener('click', function() {
 });
 
 window.naviContainer.appendChild(aboutPage);
-
+/*
 const contactPage = document.createElement("button");   
 window.contactPage = contactPage;
 contactPage.textContent = "Contact";
