@@ -56,6 +56,8 @@ else{
     });
 }
 
+
+
 homePage.addEventListener('click', function() {
     window.location.href = "../../index.html";
 });
@@ -275,6 +277,12 @@ const shortcutPage = document.createElement("button");
 shortcutPage.textContent = "Shortcuts";
 navigationTab.appendChild(shortcutPage);    
 */
+
+//
+//let PJICO = document.createElementID("img");
+//let AWICO = document.createElementID("img");
+//let ABICO = document.createElementID("img");
+
 
 window.pageContainer.appendChild(navigationTab);
 
