@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(39, 40, 54);
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+  
+}
+
+
+/*
+.container {
+    background-color: rgb(221, 206, 206);
+    height: 98vh;
+    width: 99vw;
+    border-radius: 10px;
+}
+*/
+
+/*
+.page-container {
+    background-color: rgb(37, 53, 73);
+    border-radius: 10px;
+    height: 98vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}.navigation-tab {
+    background-color: rgb(37, 53, 73);
+    border-radius: 10px;
+    position:absolute;
+    height: 98vh;
+    width: 10%;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 80%
+}
+ 
+
+
+.page-maker {
+    background-color:aliceblue;
+    border-radius: 10px;
+    height: 95vh;
+    width: 88%;   
+    margin-right: .75%;
+    text-align: center;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*/
