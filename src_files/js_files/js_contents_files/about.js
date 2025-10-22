@@ -44,13 +44,14 @@ layer3content.style.borderRadius = "10px";
 layer3content.style.textAlign = "center";
 layer3.appendChild(layer3content);
 //profile image--------------------------------------------------------------------------------
-const profieImg = document.createElement("img");
-profieImg.src = "../img_files/profile.png";
-profieImg.style.height = (window.innerHeight / 1.7) + "px";
-profieImg.style.width = (window.innerWidth / 3.5) + "px";
-profieImg.style.borderRadius = "10px";
-profieImg.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
-layer3content.appendChild(profieImg);
+const profileImg = document.createElement("img");
+profileImg.src = "../img_files/profile.png";
+profileImg.style.height = (window.innerHeight / 1.7) + "px";
+profileImg.style.width = (window.innerWidth / 3.5) + "px";
+profileImg.style.borderRadius = "10px";
+profileImg.style.border = "5px rgb(2, 48, 71) solid";
+profileImg.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
+layer3content.appendChild(profileImg);
 //layer4--------------------------------------------------------------------------------
 const layer4 = document.createElement("div");
 layer4.style.height = (window.innerHeight / 1.449) + "px";
@@ -74,6 +75,7 @@ textContainer.style.borderRadius = "10px";
 textContainer.style.alignContent = "center";
 textContainer.style.height = (window.innerHeight / 1.68) + "px";
 textContainer.style.width = (window.innerWidth / 3.5) + "px";
+textContainer.style.border = "5px rgb(2, 48, 71) solid";
 textContainer.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
 layer4content.appendChild(textContainer);
 //text------------------------------------------------------------------------------------------------

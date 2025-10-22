@@ -3,7 +3,8 @@ console.log ("project page loaded");
 const projectTitle = document.createElement("div");
 projectTitle.style.height = (window.innerHeight / 12) + "px";
 projectTitle.style.width = (window.innerWidth / 1.115) + "px";
-projectTitle.style.borderRadius = "10px";
+projectTitle.style.borderTopLeftRadius = "10px";
+projectTitle.style.borderTopRightRadius = "10px";
 projectTitle.textContent = "PROJECTS";
 projectTitle.style.fontSize = (window.innerHeight / 14) + "px";
 projectTitle.style.textAlign = "center";
@@ -28,6 +29,7 @@ layer2.style.height = (window.innerHeight / 1.45) + "px";
 layer2.style.width = (window.innerWidth / 1.45) + "px";
 layer2.style.borderRadius = "10px";
 layer2.style.margin = "auto";
+layer2.style.border = "5px rgb(2, 48, 71) solid";
 layer2.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
 layer1.appendChild(layer2);
 
@@ -43,9 +45,33 @@ pj1img.style.borderRadius = "10px";
 pj1img.style.margin = "auto";
 pj1img.style.display = "block";
 pj1img.style.pointter = "cursor";
+
+/*
+pj1img.addEventListener("mouseover", function(){
+pj1img.src = "../img_files/start_screen.png";
+pj1img.style.opacity = "0.6";
+pj1img.style.height = (window.innerHeight / 1.45) + "px";
+pj1img.style.width = (window.innerWidth / 1.6) + "px";
+pj1img.style.borderRadius = "10px";
+pj1img.style.margin = "auto";
+pj1img.style.position = "relative";
+pj1img.style.display = "block";
+pj1img.style.pointter = "cursor";
+
+});
+
+pj1img.addEventListener("mouseout", function(){
+pj1img.src = "../img_files/start_screen.png";
+pj1img.style.opacity = "1";
+pj1img.style.height = (window.innerHeight / 1.45) + "px";
+pj1img.style.width = (window.innerWidth / 1.6) + "px";
+pj1img.style.borderRadius = "10px";
+pj1img.style.margin = "auto";
+pj1img.style.display = "block";
+pj1img.style.pointter = "cursor";
+});
+*/
 pj1.appendChild(pj1img);
-
-
 
 
 function resizeHome(){

@@ -8,6 +8,7 @@ window.container.appendChild(pageContainer);
 
 const pageContent = document.createElement("div");
 pageContent.style.backgroundColor = "rgb(33, 158, 188)";
+pageContent.style.borderRadius = "10px";
 pageContent.style.height = (window.innerHeight / 1.019) + "px";
 pageContent.style.width = (window.innerWidth / 1.1) + "px";
 pageContent.style.float = "right";
