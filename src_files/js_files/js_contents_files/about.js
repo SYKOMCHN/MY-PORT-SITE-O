@@ -10,7 +10,7 @@ aboutTitle.style.backgroundColor = "rgb(243, 154, 53)";
 pageBlock.appendChild(aboutTitle);
 //layer1--------------------------------------------------------------------------------
 const layer1 = document.createElement("div");
-layer1.style.backgroundColor = "rgba(243, 240, 238, 1)";
+layer1.style.backgroundColor = "rgb(243, 240, 238)";
 layer1.style.height = (window.innerHeight / 1.18) + "px";
 layer1.style.width = (window.innerWidth / 1.13) + "px";
 layer1.style.borderRadius = "10px";
@@ -69,7 +69,7 @@ layer4content.style.justifyContent = "center";
 layer4.appendChild(layer4content);
 //textContainer--------------------------------------------------------------------------------
 const textContainer = document.createElement("div");    
-textContainer.style.backgroundColor = "rgb(240, 240, 240)";
+textContainer.style.backgroundColor = "rgb(234, 229, 219)";
 textContainer.style.borderRadius = "10px";
 textContainer.style.alignContent = "center";
 textContainer.style.height = (window.innerHeight / 1.68) + "px";
