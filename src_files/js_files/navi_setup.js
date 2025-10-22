@@ -2,7 +2,7 @@ console.log("navigations");
 
 //containers and holders ------------------------------------------
 const naviContainer = document.createElement("div");
-naviContainer.style.backgroundColor = "rgba(135, 163, 201, 1)";
+naviContainer.style.backgroundColor = "rgb(243, 154, 53)";
 
 naviContainer.style.height = (window.innerHeight / 1.019) + "px";
 naviContainer.style.width = (window.innerWidth / 14) + "px";
@@ -13,7 +13,7 @@ naviContainer.style.alignItems = "center";
 pageContainer.appendChild(naviContainer);
 
 const naviContent = document.createElement("div");
-naviContent.style.backgroundColor = "rgba(120, 144, 190, 1)";
+naviContent.style.backgroundColor = "rgb(231, 222, 213)";
 naviContent.style.borderRadius = "10px";
 naviContainer.style.margin = "10px"
 naviContent.style.height = (window.innerHeight / 1.2) + "px";
@@ -116,7 +116,7 @@ naviContent.appendChild(projectButton);
 const artworkButton = document.createElement("button");
 artworkButton.innerText = "Artworks";
 artworkButton.style.border = "none";
-artworkButton.style.marginTop = "15px";
+artworkButton.style.marginTop = "20px";
 artworkButton.style.height = (window.innerHeight / 20) + "px";
 artworkButton.style.width = (window.innerWidth / 20) + "px";
 
@@ -164,7 +164,7 @@ naviContent.appendChild(artworkButton);
 const aboutButton = document.createElement("button");
 aboutButton.innerText = "About Me";
 aboutButton.style.border = "none";
-aboutButton.style.marginTop = "15px";
+aboutButton.style.marginTop = "20px";
 aboutButton.style.height = (window.innerHeight / 20) + "px";
 aboutButton.style.width = (window.innerWidth / 20) + "px";
 
@@ -212,7 +212,7 @@ naviContent.appendChild(aboutButton);
 const contactButton = document.createElement("button");
 contactButton.innerText = "Contact";
 contactButton.style.border = "none";
-contactButton.style.marginTop = "15px";
+contactButton.style.marginTop = "20px";
 contactButton.style.height = (window.innerHeight / 20) + "px";
 contactButton.style.width = (window.innerWidth / 20) + "px";
 
@@ -259,7 +259,7 @@ naviContent.appendChild(contactButton);
 function resizeNavi() {
     naviContainer.style.height =  (window.innerHeight / 1.019) + "px";
     naviContainer.style.width = (window.innerWidth / 14) + "px";
-    naviContent.style.height = (window.innerHeight / 1.5) + "px";
+    naviContent.style.height = (window.innerHeight / 1.2) + "px";
     naviContent.style.width = (window.innerWidth / 20) + "px";
     homeButton.style.height = (window.innerHeight / 20) + "px";
     homeButton.style.width = (window.innerWidth / 20) + "px";
