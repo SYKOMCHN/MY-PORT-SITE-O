@@ -44,33 +44,7 @@ pj1img.style.width = (window.innerWidth / 1.6) + "px";
 pj1img.style.borderRadius = "10px";
 pj1img.style.margin = "auto";
 pj1img.style.display = "block";
-pj1img.style.pointter = "cursor";
-
-/*
-pj1img.addEventListener("mouseover", function(){
-pj1img.src = "../img_files/start_screen.png";
-pj1img.style.opacity = "0.6";
-pj1img.style.height = (window.innerHeight / 1.45) + "px";
-pj1img.style.width = (window.innerWidth / 1.6) + "px";
-pj1img.style.borderRadius = "10px";
-pj1img.style.margin = "auto";
-pj1img.style.position = "relative";
-pj1img.style.display = "block";
-pj1img.style.pointter = "cursor";
-
-});
-
-pj1img.addEventListener("mouseout", function(){
-pj1img.src = "../img_files/start_screen.png";
-pj1img.style.opacity = "1";
-pj1img.style.height = (window.innerHeight / 1.45) + "px";
-pj1img.style.width = (window.innerWidth / 1.6) + "px";
-pj1img.style.borderRadius = "10px";
-pj1img.style.margin = "auto";
-pj1img.style.display = "block";
-pj1img.style.pointter = "cursor";
-});
-*/
+pj1img.style.pointer = "cursor";
 pj1.appendChild(pj1img);
 
 

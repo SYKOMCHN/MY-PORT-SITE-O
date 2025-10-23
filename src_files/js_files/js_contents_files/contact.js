@@ -93,13 +93,15 @@ messageArea.style.borderRadius = "10px";
 messageArea.style.border = "5px rgb(2, 48, 71) solid";
 messageArea.style.resize = "none";
 
-
 const submit = document.createElement('button');
 submit.type = 'Submit';
 submit.textContent = "Send";
+submit.style.borderRadius = "10px";
 submit.style.alignItems = "center";
-
-
+submit.style.margin ="13px";
+submit.style.border = "5px rgb(2, 48, 71) solid";
+submit.style.borderRadius = "10px";
+submit.style.alignItem = "center";
 
 form.appendChild(nameInput);
 form.appendChild(emailInput);
@@ -108,54 +110,24 @@ form.appendChild(messageArea);
 form.appendChild(document.createElement('br'));
 form.appendChild(submit);
 
+form.addEventListener('submit', function(x) {
+    x.preventDefault(); 
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageArea.value.trim();
+
+    if (!name || !email || !message) {
+        alert('Please fill out all fields!');
+        return;
+    }
+
+    alert(`Thank you for sending a message, ${name}!`);
+
+    form.reset();
+});
+
 InputContainer.appendChild(form);
-
-/*
-const form = document.createElement('form');
-
-    
-    const nameInput = document.createElement('input');
-    nameInput.name = 'name';
-    nameInput.placeholder = 'Enter name';
-
-    // Email input
-    const emailInput = document.createElement('input');
-    emailInput.name = 'email';
-    emailInput.placeholder = 'Enter email';
-    emailInput.type = 'email';
-
-    // Message textarea
-    const messageArea = document.createElement('textarea');
-    messageArea.name = 'message';
-    messageArea.placeholder = 'Enter message';
-
-    // Submit button
-    const submitBtn = document.createElement('button');
-    submitBtn.type = 'submit';
-    submitBtn.textContent = 'Submit';
-
-    form.appendChild(nameInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(emailInput);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(messageArea);
-    form.appendChild(document.createElement('br'));
-    form.appendChild(submitBtn);
-
-    // Add form to page
-    document.body.appendChild(form);
-
-    // Optional: handle submit
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const data = {
-        name: nameInput.value,
-        email: emailInput.value,
-        message: messageArea.value
-      };
-      console.log('Form submitted:', data);
-    });
-*/
 
 const layer4 = document.createElement("div");
 layer4.style.height = (window.innerHeight / 1.449) + "px";
@@ -176,28 +148,80 @@ socTitle.style.display = "flex";
 socTitle.style.width = (window.innerWidth / 2.9) + "px";
 socTitle.style.height = (window.innerHeight / 36) + "px";
 socTitle.style.justifyContent = "center";
-socTitle.textContent = "Github";
+socTitle.textContent = "Github Link";
 socTitle.style.fontSize = "25px";
 layer4Content.appendChild(socTitle);
 
 const selectContainer = document.createElement("div");
 selectContainer.style.borderRadius = "10px";
-selectContainer.style.backgroundColor = "red";
+selectContainer.style.alignContent = "center";
 selectContainer.style.width = (window.innerWidth / 2.9) + "px";
 selectContainer.style.height = (window.innerHeight / 1.55) + "px";
 layer4Content.appendChild(selectContainer);
 
+const c1 = document.createElement("a");
+c1.style.backgroundColor = "black";
+c1.href = "https://github.com/SYKOMCHN/";
+selectContainer.appendChild(c1); 
+
+const c1img = document.createElement("img");
+c1img.src = "../img_files/githubIcon.png";
+c1img.style.height = (window.innerHeight / 3) + "px";
+c1img.style.width = (window.innerWidth / 5.5) + "px";
+c1img.style.borderRadius = "10px";
+c1img.style.margin = "auto";
+c1img.style.paddingBottom = "50px";
+c1img.style.display = "block";
+c1img.style.pointer = "cursor";
+c1.appendChild(c1img);
+
 function resizeContact(){
-    contactTitle.style.height = (window.innerHeight / 12) + "px";
-    contactTitle.style.width = (window.innerWidth / 1.115) + "px";
-    contactTitle.style.fontSize = (window.innerHeight / 14) + "px";
-    layer1.style.height = (window.innerHeight / 1.18) + "px";
-    layer1.style.width = (window.innerWidth / 1.13) + "px";
-    layer1.style.marginTop = (window.innerHeight / 60) + "px";
-    layer2.style.height = (window.innerHeight / 1.45) + "px";
-    layer2.style.width = (window.innerWidth / 1.45) + "px";
-    layer3.style.height = (window.innerHeight / 1.449) + "px";
-    layer3.style.width = (window.innerWidth / 2.9) + "px";
-    layer4.style.height = (window.innerHeight / 1.449) + "px";
-    layer4.style.width = (window.innerWidth / 2.9) + "px";
+    
+contactTitle.style.height = (window.innerHeight / 12) + "px";
+contactTitle.style.width = (window.innerWidth / 1.115) + "px";
+contactTitle.style.fontSize = (window.innerHeight / 14) + "px";
+
+const layer1 = document.createElement("div");
+layer1.style.backgroundColor = "rgb(243, 240, 238)";
+
+layer1.style.marginTop = (window.innerHeight / 60) + "px";
+
+layer2.style.height = (window.innerHeight / 1.45) + "px";
+layer2.style.width = (window.innerWidth / 1.45) + "px";
+
+layer3.style.height = (window.innerHeight / 1.449) + "px";
+layer3.style.width = (window.innerWidth / 2.9) + "px";
+
+emailTitle.style.marginTop = (window.innerHeight / 60) + "px";
+
+emailTitle.style.width = (window.innerWidth / 2.9) + "px";
+emailTitle.style.height = (window.innerHeight / 36) + "px";
+
+InputContainer.style.width = (window.innerWidth / 2.9) + "px";
+InputContainer.style.height = (window.innerHeight / 1.55) + "px";
+
+form.style.marginTop = (window.innerHeight / 13) + "px";
+
+nameInput.style.height = (window.innerHeight / 40) + "px";
+nameInput.style.width = (window.innerWidth / 8.5) + "px";
+
+emailInput.style.height = (window.innerHeight / 40) + "px";
+emailInput.style.width = (window.innerWidth / 8.5) + "px";
+
+messageArea.style.height = (window.innerHeight / 3) + "px";
+messageArea.style.width = (window.innerWidth / 4) + "px";
+
+layer4.style.height = (window.innerHeight / 1.449) + "px";
+layer4.style.width = (window.innerWidth / 2.9) + "px";
+
+socTitle.style.marginTop = (window.innerHeight / 60) + "px";
+
+socTitle.style.width = (window.innerWidth / 2.9) + "px";
+socTitle.style.height = (window.innerHeight / 36) + "px";
+
+selectContainer.style.width = (window.innerWidth / 2.9) + "px";
+selectContainer.style.height = (window.innerHeight / 1.55) + "px";
+
+c1img.style.height = (window.innerHeight / 3) + "px";
+c1img.style.width = (window.innerWidth / 5.5) + "px";
 }
