@@ -75,6 +75,9 @@ const homeButton = document.createElement("button");
         if(!window.location.href.indexOf("index.html") > -1){
         window.location.href = "../../index.html";
         }
+        else{
+            window.location.href = "index.html";
+        }
     });
 naviContent.appendChild(homeButton);
 
