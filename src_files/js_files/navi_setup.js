@@ -31,7 +31,7 @@ const homeButton = document.createElement("button");
         homeButton.style.width = (window.innerWidth / 20) + "px";
         homeButton.style.cursor = "pointer";
 
-    if(window.location.href.indexOf("index.html") > -1){
+    if(window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/MY-PORT-SITE-O/' ) {
         homeButton.innerText = "Home";
         homeButton.style.fontFamily = "'Courier New', 'Courier','monospace'";
         homeButton.style.fontWeight = "bold";
@@ -72,9 +72,7 @@ const homeButton = document.createElement("button");
     
     homeButton.addEventListener("click", function() {
         console.log("home clicked");
-        if(!window.location.href.indexOf("index.html") > -1){
         window.location.href = "../../index.html";
-        }
     });
 naviContent.appendChild(homeButton);
 
