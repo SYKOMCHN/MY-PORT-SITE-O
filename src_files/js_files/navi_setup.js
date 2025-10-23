@@ -72,7 +72,11 @@ const homeButton = document.createElement("button");
     
     homeButton.addEventListener("click", function() {
         console.log("home clicked");
+        if(window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/MY-PORT-SITE-O/' ) {
+            window.location.href = "index.html";
+        }else{
         window.location.href = "../../index.html";
+        }
     });
 naviContent.appendChild(homeButton);
 
