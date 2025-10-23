@@ -103,12 +103,51 @@ img5.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
 img5Container.appendChild(img5);
 
 function resizeArtwork(){
-    artworkTitle.style.height = (window.innerHeight / 12) + "px";
-    artworkTitle.style.width = (window.innerWidth / 1.115) + "px";
-    artworkTitle.style.fontSize = (window.innerHeight / 14) + "px";
-    layer1.style.height = (window.innerHeight / 1.18) + "px";
-    layer1.style.width = (window.innerWidth / 1.13) + "px";
-    layer1.style.marginTop = (window.innerHeight / 60) + "px";
-    layer2.style.height = (window.innerHeight / 1.45) + "px";
-    layer2.style.width = (window.innerWidth / 1.45) + "px";
+ 
+artworkTitle.style.height = (window.innerHeight / 12) + "px";
+artworkTitle.style.width = (window.innerWidth / 1.115) + "px";
+
+artworkTitle.style.fontSize = (window.innerHeight / 14) + "px";
+
+layer1.style.height = (window.innerHeight / 1.227) + "px";
+layer1.style.width = (window.innerWidth / 1.151) + "px";
+
+layer1.style.marginTop = (window.innerHeight / 60) + "px";
+layer1.style.padding = (window.innerHeight / 60) + "px";
+
+layer2.style.height = (window.innerHeight / 2.5) + "px";
+layer2.style.width = (window.innerWidth / 1.15) + "px";
+
+img1Container.style.marginTop = (window.innerHeight / 20) + "px";
+
+img2Container.style.marginTop = (window.innerHeight / 20) + "px";
+
+img3Container.style.marginTop = (window.innerHeight / 20) + "px";
+
+
+const img1 = document.createElement("img");
+img1.src = "../img_files/snap_files/3.jpg";
+img1.style.height = (window.innerHeight / 3.5) + "px";
+img1.style.width = (window.innerWidth / 4) + "px";
+
+img2.style.height = (window.innerHeight / 3.5) + "px";
+img2.style.width = (window.innerWidth / 4) + "px";
+
+img3.style.height = (window.innerHeight / 3.5) + "px";
+img3.style.width = (window.innerWidth / 4.5) + "px";
+
+layer3.style.height = (window.innerHeight / 2.5) + "px";
+layer3.style.width = (window.innerWidth / 1.15) + "px";
+layer3.style.gap = (window.innerWidth / 23) + "px";
+
+img4Container.style.marginTop = (window.innerHeight / 20) + "px";
+
+img5Container.style.marginTop = (window.innerHeight / 20) + "px";
+
+img4.style.height = (window.innerHeight / 3.5) + "px";
+img4.style.width = (window.innerWidth / 4.0) + "px";
+
+img5.style.height = (window.innerHeight / 3.5) + "px";
+img5.style.width = (window.innerWidth / 4.33) + "px";
+
 }

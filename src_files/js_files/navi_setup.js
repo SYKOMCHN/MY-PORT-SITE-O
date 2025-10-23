@@ -72,7 +72,9 @@ const homeButton = document.createElement("button");
     
     homeButton.addEventListener("click", function() {
         console.log("home clicked");
+        if(!window.location.href.indexOf("index.html") > -1){
         window.location.href = "../../index.html";
+        }
     });
 naviContent.appendChild(homeButton);
 

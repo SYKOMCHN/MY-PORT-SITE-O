@@ -91,42 +91,34 @@ aboutText.innerHTML =
 textContainer.appendChild(aboutText);
 //resize function--------------------------------------------------------------------------------
 function resizeAbout(){
-    //title-----------------------------------------------------
-    aboutTitle.style.height = (window.innerHeight / 12) + "px";
-    aboutTitle.style.width = (window.innerWidth / 1.115) + "px";
-    aboutTitle.style.fontSize = (window.innerHeight / 14) + "px";
-    //layer_1---------------------------------------------------
-    layer1.style.height = (window.innerHeight / 1.18) + "px";
-    layer1.style.width = (window.innerWidth / 1.13) + "px";
-    layer1.style.marginTop = (window.innerHeight / 60) + "px";
-    //layer_2---------------------------------------------------
-    layer2.style.height = (window.innerHeight / 1.45) + "px";
-    layer2.style.width = (window.innerWidth / 1.45) + "px";
-    //layer_3---------------------------------------------------
-    layer3.style.height = (window.innerHeight / 1.449) + "px";
-    layer3.style.width = (window.innerWidth / 2.9) + "px";
-    //image-----------------------------------------------------
-    profieImg.style.height = (window.innerHeight / 1.7) + "px";
-    profieImg.style.width = (window.innerWidth / 3.5) + "px";
-    //layer_4---------------------------------------------------
-    layer4.style.height = (window.innerHeight / 1.449) + "px";
-    layer4.style.width = (window.innerWidth / 2.9) + "px";
-    //textContainer--------------------------------------------
-    textContainer.style.height = (window.innerHeight / 1.68) + "px";
-    textContainer.style.width = (window.innerWidth / 3.5) + "px";
-    //text----------------------------------------------------------
-    if (window.innerWidth < 1400 && window.innerWidth >= 1200){
-        aboutText.style.fontSize = (window.innerHeight / 80) + "px";
-        aboutText.style.margin = (window.innerHeight / 20 ) + "px";
-    }
-    if (window.innerWidth < 1200){
-        aboutText.style.fontSize = (window.innerHeight / 100) + "px";
-        aboutText.style.margin = (window.innerHeight / 25 ) + "px";
-    }
-    else {
-        aboutText.style.fontSize = (window.innerHeight / 60) + "px";
-        aboutText.style.margin = (window.innerHeight / 20 ) + "px";
-    }
+
+aboutTitle.style.height = (window.innerHeight / 12) + "px";
+aboutTitle.style.width = (window.innerWidth / 1.115) + "px";
+
+aboutTitle.style.fontSize = (window.innerHeight / 14) + "px";
+
+layer1.style.height = (window.innerHeight / 1.18) + "px";
+layer1.style.width = (window.innerWidth / 1.13) + "px";
+
+layer1.style.marginTop = (window.innerHeight / 60) + "px";
+
+layer2.style.height = (window.innerHeight / 1.45) + "px";
+layer2.style.width = (window.innerWidth / 1.45) + "px";
+
+layer3.style.height = (window.innerHeight / 1.449) + "px";
+layer3.style.width = (window.innerWidth / 2.9) + "px";
+
+profileImg.style.height = (window.innerHeight / 1.7) + "px";
+profileImg.style.width = (window.innerWidth / 3.5) + "px";
+
+layer4.style.height = (window.innerHeight / 1.449) + "px";
+layer4.style.width = (window.innerWidth / 2.9) + "px";
+
+textContainer.style.height = (window.innerHeight / 1.68) + "px";
+textContainer.style.width = (window.innerWidth / 3.5) + "px";
+
+aboutText.style.fontSize = (window.innerHeight / 60) + "px";
+aboutText.style.margin = (window.innerHeight / 20 ) + "px";
     
 }
 
