@@ -29,7 +29,50 @@ layer2.style.height = (window.innerHeight / 1.45) + "px";
 layer2.style.width = (window.innerWidth / 1.45) + "px";
 layer2.style.borderRadius = "10px";
 layer2.style.margin = "auto";
+layer2.style.display = "flex";
+layer2.style.border = "5px rgb(2, 48, 71) solid";
+layer2.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
 layer1.appendChild(layer2);
+
+const layer3 = document.createElement("div");
+layer3.style.height = (window.innerHeight / 1.45) + "px";
+layer3.style.width = (window.innerWidth / 1.) + "px";
+layer3.style.borderRadius = "10px"
+layer3.style.justifyContent = "center";
+layer2.appendChild(layer3)
+
+const layer3Content = document.createElement("div");
+layer3.appendChild(layer3Content);
+
+const textBlock = document.createElement("div");
+textBlock.style.borderRadius = "10px";
+textBlock.style.textAlign = "center";
+textBlock.style.fontSize = (window.innerHeight / 60) + "px";
+textBlock.style.margin = (window.innerHeight / 20 ) + "px";
+textBlock.innerHTML = "<h1>HELLO VIEWER!" + "<br>" + "Welcome to my Portfolio Website!" + "<br>" + 
+"To navigate through this site, please use the buttons on the tab to the left of the screen! I hope you enjoy!" ;
+layer3Content.appendChild(textBlock);
+
+const layer4 = document.createElement("div");
+layer4.style.borderRadius = "10px";
+layer4.style.width = (window.innerWidth / 4.5) + "px";
+layer4.style.height = (window.innerHeight / 1.45) + "px";
+layer4.style.float = "right";
+layer4.style.alignContent = "center";
+layer2.appendChild(layer4);
+
+const layer4content = document.createElement("div");
+layer4content.style.margin = "auto";
+layer4content.style.borderRadius = "10px";
+layer4content.style.alignContent = "center";
+layer4.appendChild(layer4content);
+
+const homeImg = document.createElement("img");
+homeImg.src = "src_files/img_files/yeah.png";
+homeImg.style.borderRadius = "10px"
+homeImg.style.height = (window.innerHeight / 3) + "px";
+homeImg.style.width = (window.innerWidth / 5.6) + "px";
+layer4content.appendChild(homeImg);
 
 function resizeHome(){
     homeTitle.style.height = (window.innerHeight / 12) + "px";

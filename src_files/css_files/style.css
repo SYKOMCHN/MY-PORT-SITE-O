@@ -1,6 +1,7 @@
 body {
     background-color: rgb(2, 48, 71);
     font-family: 'Courier New', 'Courier','monospace';
+    color: rgb(2, 48, 71);
     font-weight: bold;
     overflow: hidden; 
 }
