@@ -1,3 +1,5 @@
+console.log ("artwork page");
+
 const artworkTitle = document.createElement("div");
 artworkTitle.style.height = (window.innerHeight / 12) + "px";
 artworkTitle.style.width = (window.innerWidth / 1.115) + "px";
