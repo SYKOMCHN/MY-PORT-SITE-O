@@ -87,7 +87,7 @@ layer3.appendChild(img5Container);
 const img4 = document.createElement("img");
 img4.src = "../img_files/snap_files/8.jpg";
 img4.style.height = (window.innerHeight / 3.5) + "px";
-img4.style.width = (window.innerWidth / 4.3) + "px";
+img4.style.width = (window.innerWidth / 4.0) + "px";
 img4.style.borderRadius = "10px";
 img4.style.border = "5px rgb(2, 48, 71) solid";
 img4.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
@@ -101,8 +101,6 @@ img5.style.borderRadius = "10px";
 img5.style.border = "5px rgb(2, 48, 71) solid";
 img5.style.filter = "drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5))";
 img5Container.appendChild(img5);
-
-
 
 function resizeArtwork(){
     artworkTitle.style.height = (window.innerHeight / 12) + "px";
